@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --bs-body-font-family: "Montserrat", sans-serif!important;
+}
+
+header {
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-image: url("/img/inicio/banner.jpg");
+  background-position: bottom center;
+  background-attachment: fixed;
+  z-index: -3;
+}
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.568627451), rgba(0, 0, 0, 0.4039215686));
+  z-index: -2;
+}
+header > nav > div {
+  padding: 2rem 0;
+}
+header > nav > div img {
+  width: 5vw;
+  min-width: 3rem;
+}
+header > nav > div > div ul li a {
+  font-weight: 500 !important;
+  font-size: 1.5rem !important;
+}
+header > nav > div > div ul li a.active {
+  font-weight: 600;
+}
+header > nav > div > div ul li a:hover {
+  font-weight: 600;
+}
+header > nav > div > div ul li:last-of-type a {
+  background-color: #fae5b7;
+}
+@media (max-width: 992px) {
+  header > nav {
+    background-color: rgba(19, 19, 19, 0);
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4431372549);
+    background-color: rgba(0, 0, 0, 0.1098039216);
+  }
+  header > nav > div {
+    padding: 1rem 0;
+  }
+}
+header #inicio {
+  padding: 6rem 1rem 8rem;
+}
+header #inicio > div {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.375em;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.062745098);
+  background-color: rgba(158, 158, 158, 0.2823529412);
+  color: #FFF;
+}
+header #inicio > div h1 {
+  opacity: 0.4;
+  transition: opacity 5s ease-in-out;
+  margin-bottom: 1rem;
+}
+header #inicio > div h5 {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+@media (max-width: 992px) {
+  header #inicio {
+    padding: 4rem 1rem;
+  }
+}
+
+main #sobre {
+  padding: 4rem 1rem 10rem;
+  background-color: #fae5b7;
+}
+main #sobre > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main #sobre > div > div {
+  flex-basis: 0;
+}
+main #sobre > div > div:nth-of-type(1) {
+  border-left: 7.5px solid #6e9b66;
+  padding: 0 5rem;
+  flex-grow: 2;
+}
+main #sobre > div > div:nth-of-type(1) h1 {
+  color: #6e9b66;
+}
+main #sobre > div > div:nth-of-type(2) {
+  flex-grow: 1;
+}
+main #sobre > div > div:nth-of-type(2) img {
+  max-width: 100%;
+}
+@media (max-width: 750px) {
+  main #sobre > div {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1000px) {
+  main #sobre > div > div:nth-of-type(1) {
+    padding: 0 2rem;
+  }
+}
+main #procedimentos {
+  position: relative;
+}
+main #procedimentos::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-5deg);
+  transform-origin: top;
+  background-color: #FFF;
+  z-index: 0;
+}
+main #procedimentos > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  position: relative;
+  z-index: 1;
+}/*# sourceMappingURL=main.css.map */
